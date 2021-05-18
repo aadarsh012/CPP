@@ -1,15 +1,21 @@
-#include<iostream>
-using namespace std;
+#include<bits/stdc++.h>
 int main()
 {
-    int n=0002;
-    int sum=0;
-    while(n>0)
+    using namespace std;
+
+    int n;
+    cin>>n;
+    int ar[n];
+    int i;
+    for(int i=0 ;i<n; i++)
     {
-        int a=n%10;
-         sum=sum*10 + a;
-         n=n/10;
+        cin>>ar[i];
+
     }
-    cout<<sum<<endl;
+    
+    for(int i=n-1; i>=0; i--)
+    {
+        cout<<ar[i]<<" ";
+    }
     return 0;
 }
